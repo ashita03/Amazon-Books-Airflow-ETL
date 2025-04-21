@@ -150,6 +150,6 @@ insert_book_data_task = PythonOperator(
     dag=dag,
 )
 
-#dependencies
+# #dependencies
 
 fetch_book_data_task >> create_table_task >> insert_book_data_task
