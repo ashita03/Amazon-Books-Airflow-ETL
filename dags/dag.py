@@ -12,7 +12,7 @@ import requests
 import pandas as pd
 from bs4 import BeautifulSoup
 from airflow.operators.python import PythonOperator
-from airflow.providers.postgres import PostgresOperator
+from airflow.providers.postgres.operators.postgres import PostgresOperator
 from airflow.providers.postgres.hooks.postgres import PostgresHook
 
 #1) fetch amazon data (extract) 2) clean data (transform)
